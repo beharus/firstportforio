@@ -1,0 +1,1062 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;500&display=swap');@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1600px;
+    padding: 0 5%;
+    margin:auto;
+}
+/*navbar*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Jost' , sans-serif;
+    transition: all .3s ease;
+    z-index: 999;
+    margin-top: 0;
+    background: #fff;
+}
+.navbar.sticky{
+    background: rgb(220, 193, 120);
+    padding: 15px 0;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    margin-left: 25px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    color: #292F36;
+    transition: color 0.5s ease;
+}
+.navbar .menu li a:hover{
+    color: #CDA274;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: rgb(255, 162, 0);
+}
+/*menu bnt*/
+.menu-btn{
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/*homepage*/
+.home{
+    display: flex;
+    background: url(./image/mainfon.png) local;
+    width: 100vw;
+    height: 140vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'DM Serif Display' , sans-serif;
+
+}
+.home .max-width{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 1600px;
+}
+.home-content{
+    width: 85%;
+}
+.home .home-content .text-1{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: 0.22px;
+    color: #292F36;
+}
+.home .home-content .text-2{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: #292F36;
+    color: #fff;
+    font-size: 23px;
+    padding: 22px 34px;
+    margin-top: 20px;
+    border-radius: 18px;
+    border: 2px solid #292F36;
+    text-decoration: none;
+    transition: all .3s ease;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.72px;
+}
+.home .home-content a i{
+    font-size: 20px;
+    width: 20px;
+    height: auto;
+    color: #CDA274;
+    margin-left: 21px;
+}
+.home .home-content a:hover{
+    background: transparent;
+    color: #292F36;
+    text-decoration: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 42px;
+    width: 45px;
+    bottom: 10px;
+    background: crimson;
+    color: #fff;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    pointer-events: none;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30;
+}
+/*card*/
+.services1{
+    color: #000;
+    background: transparent;
+    padding-top: 175px;
+}
+.services1 .services-content .card:hover{
+    box-shadow: inset 10px -6px 10px 5px #CDA274;
+    
+}
+.services1 .services-content .card .box3{
+    transition: all .3s ease;
+}
+.services1 .services-content .card:hover .box3{
+    transform: scale(1.05);
+    
+}
+.services1 .services-content .card{
+    width: calc(30% - 20px);
+    background: transparent;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 20px;
+}
+.services1 .services-content .card p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+    margin-bottom: 40px;
+}
+.services1 .services-content .card span a:hover{
+    color: #CDA274;
+}
+.services1 .services-content .card span a{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #4D5053;
+    transition: all .4s ease;
+}
+.services1 .services-content .card .text{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #292F36;
+    margin-bottom: 17px;
+}
+.services1 .services-content,
+.logosOfBrands .max-width{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.logosOfBrands .max-width .logoImg{
+    width: calc(20% - 10px);
+}
+/*about section */
+section{
+    padding: 100px 0;
+}
+.about,.skills
+.services, .project, footer, .contact{
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+}
+.services .services-content,
+.about .about-content,
+.skills .skill-content,
+.contact .content-contact{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about .about-content .left{
+    width: 55%;
+} 
+.about .about-content .right{
+    width: 45%;
+} 
+.about .about-content .left .text{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: 0.22px;
+    color: #292F36;
+    margin-bottom: 42px;
+}
+.about .about-content .left p{
+    text-align: justify;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+}
+.about .about-content .left .help {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+.about .about-content .left .help img{
+    display: inline-block;
+}
+.about .about-content .left .help p{
+    display: inline-block;
+    margin-left: 20px;
+}
+.about .about-content .left a i{
+    font-size: 20px;
+    width: 20px;
+    height: auto;
+    color: #CDA274;
+    margin-left: 31px;
+}
+.about .about-content .left a:hover{
+    background: transparent;
+    color: #292F36;
+    text-decoration: none;
+}
+.about .about-content .left a{
+    text-align: justify;
+    background: #292F36;
+    padding: 22px 34px;
+    margin-top: 20px;
+    border-radius: 18px;
+    border: 2px solid #292F36;
+    text-decoration: none;
+    transition: all .3s ease;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.72px;
+    color: #FFFFFF;
+}
+.about .about-content .right a:hover{
+    background: rgba(0, 0, 0, 0);
+    color: crimson;
+    text-decoration: none;
+}
+
+/*servises*/
+.services, .project{
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.services .max-width{
+    width: 90vw;
+    background: #F4F0EC;
+    border-radius: 70px;
+}
+.services .services-content .help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 35px 25px 0;
+}
+.services .services-content .help img{
+    display: inline-block;
+    align-self:start;
+    border: 4px solid #CDA274;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+.services .services-content .help p{
+    display: inline-block;
+    margin-left: 20px;
+}
+.services .services-content .help p span{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.22px;
+    color: #292F36;
+}
+.services .services-content .help p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+}
+.services .title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #292F36;
+    margin-top: 103px;
+    margin-bottom: 47px;
+}
+.services .services-content .card{
+    width: calc(33% - 12px);
+    text-align: left;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 25px 20px;
+    transition: all .3s ease;
+    margin-bottom: 121px;
+    padding: 0 35px;
+
+    text-align: center;
+}
+.services .services-content .card:hover i{
+    color: #fff;
+}
+.services .services-content .card:hover img{
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+.services .services-content .card:hover{
+    background: rgba(220, 150, 20, 0.383);
+}
+.services .services-content .card .box3{
+    transition: all .3s ease;
+}
+.services .services-content .card .box3 p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+    margin-bottom: 45px;
+}
+.services .services-content .card:hover .box3{
+    transform: scale(1.05);
+}
+.services .services-content .card text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/*skill section*/
+
+.skills{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.skills .max-width .title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #292F36;
+    text-align: center;
+}
+.skills .skill-content .box{
+    padding-bottom: 30px;
+}
+.skills .skill-content .box .boxtext{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4D5053
+}
+.skills .skill-content img{
+    cursor: pointer;
+    transition: all .5s ease;
+    overflow: hidden;
+    border-top-right-radius: 80px;
+}
+.skills .skill-content img:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 5px 5px rgba(51, 51, 51, 0.223),
+                5px -5px 10px 10px rgba(51, 51, 51, 0.164);
+    border-top-right-radius: 80px;
+}
+.skills .skill-content .box .boxtext span{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.22px;
+    color: #292F36;
+}
+.skills .skill-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills .skill-content .boxcard{
+    margin-top: 25px;
+}
+
+.skills .skill-content .boxcard i{
+    cursor: pointer;
+    color:  #292F36;
+    background: #F4F0EC;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 4px solid #F4F0EC;
+    transition: all .3s ease;
+}
+.skills .skill-content .boxcard i:hover{
+    background: none;
+    color: #CDA274;
+}
+.skills .skill-content .boxcard{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills .max-width p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    
+    /* identical to box height, or 150% */
+    text-align: center;
+    letter-spacing: 0.22px;
+    
+    color: #4D5053;}
+.skills .skill-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skill-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skill-content .left p{
+    text-align: justify;
+}
+.skills .skill-content .left a{
+    text-decoration: none;
+    text-align: justify;
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all .3s ease;
+    font-weight: 600;
+}
+.skills .skill-content .left a:hover{
+    background: transparent;
+    color: crimson;
+}
+
+.skills .skill-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skill-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+/*project*/
+.project{
+    background: #F4F0EC;
+    transition: all .3s ease;
+    width: 100vw;
+}
+.project .max-width{
+    display: flex;
+    width: 100%;
+}
+.project .carousel .card:hover img{
+    border: 5px solid #fff;
+}
+.project .carousel .card:hover .box3{
+    transform: scale(1.05);
+}
+.project .card{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 128px;
+    text-align: center;
+    letter-spacing: 1.7px;
+    color: #CDA274;
+    width: calc(25% - 10px);
+}
+#card1{
+    border-right: 3px solid #CDA274;
+    padding-bottom: 20px;
+}
+#card2{
+    border-right: 3px solid #CDA274;
+    padding-bottom: 20px;
+}
+#card3{
+    border-right: 3px solid #CDA274;
+    padding-bottom: 20px;
+}
+.project .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+.project .card p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.22px;    
+    color: #4D5053;
+}
+/*contact*/
+
+.contact .title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #292F36;
+}
+.contact .content-contact .columnd{
+    width: calc(50% - 30px);
+}
+.contact .text{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+    margin-top: 21px;
+}
+.contact .content-contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.contact .content-contact .card{
+    width: calc(33% - 10px);
+    margin-bottom: 40px;
+}
+.contact .content-contact .cardimg{
+    position: relative;
+    display: flex;
+    width: 347px;
+}
+.contact .content-contact .cardimg img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    cursor: pointer;
+}
+.contact .content-contact .cardimg h4{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    left: 20px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px 8px 8px 0px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+    transition: all .3s ease;
+    border: 2px solid #fff;
+}
+.contact .content-contact .cardimg:hover h4{
+    background: rgba(255, 255, 255, 0.387);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 14px;
+}
+.contact .content-contact .card p{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    color: #292F36;
+    margin-top: 15px;
+    margin-bottom: 34px;
+}
+.contact .content-contact .card .last{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline ;
+    width: 347px;
+}
+.contact .content-contact .card .last i{
+    color: #292F36;
+    border: 2px solid #F4F0EC;
+    background: #F4F0EC;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.contact .content-contact .card .last i:hover{
+    background: none;
+    color: #CDA274;
+    border: 2px solid #CDA274;
+}
+.contact .content-contact .card .last p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+    margin-bottom: 55px;
+}
+/*another*/
+.blackish .max-width{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292F36;
+    border-radius: 70px;
+    height: 414px;
+    width: 80vw;
+    color: #fff;
+}
+.blackish .blackish-content{
+    display: block;
+}
+.blackish .max-width .text{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+    transition: all .3s ease;
+}
+.blackish .max-width p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.22px;    
+    color: #FFFFFF;
+    margin-bottom: 31px;
+}
+.blackish .max-width .btn{
+    display:inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #CDA274;
+    border: 2px solid #CDA274;
+    box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    width: 241px;
+    height: 71px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.blackish .max-width .btn:hover{
+    background: none;
+}
+.blackish .max-width .btn:hover i{
+    color: #CDA274;
+}
+/*footer*/
+footer{
+    background: #111;
+    padding: 80px 23px;
+    color: #fff;
+    width: 100%;
+}
+footer span{
+    align-items: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+/*resporsive btn*/
+
+@media (max-width:1330px ){
+    .home .max-width{
+        margin-left: 0;
+    }
+    .about-me-foto{
+        width: 500px;
+        height: auto;
+    }
+    .services .services-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .services .services-content .help {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px 0px 0;
+    }
+    .services .services-content .help img{
+        display: inline-block;
+        align-self:start;
+    }
+    .services .services-content .help p{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .contact .content-contact .card{
+        width: calc(40% - 10px);
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:1104px ){
+.home .home-content .text-1{
+    font-size: 70px;
+}
+.services1 .services-content .card{
+    width: calc(50% - 20px);
+    background: transparent;
+    text-align: center;
+    padding: 25px 20px;
+}
+.services .services-content .card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+.about-me-foto{
+    display: none;
+}
+.logosOfBrands .max-width .logoImg{
+    width: calc(30% - 10px);
+    margin-bottom: 50px;
+}
+.contact .content-contact .card{
+    width: calc(40% - 10px);
+    margin-bottom: 40px;
+}
+}
+@media (max-width:991px ){
+    .about .about-content .left{
+        width: 100%;
+        margin-bottom: 100px;
+    } 
+    .logosOfBrands .max-width .logoImg{
+        width: calc(33% - 10px);
+        margin-bottom: 50px;
+    }
+    .about .about-content .left .text{
+        width: 100%;
+        display: block;
+    }
+    .about .about-content .right{
+        width: 100%;
+        margin-left: 0;
+    } 
+    .services1 .services-content .card{
+        width: calc(50% - 20px);
+        background: transparent;
+        text-align: center;
+        padding: 25px 20px;
+    }
+    .services .services-content .card{
+        width: calc(50% - 50px);
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width:947px ){
+
+.menu-btn{
+    display: block;
+    z-index: 9999;
+}
+.menu-btn i.active:before{
+    content: "\f00d";
+}
+.navbar .menu.active{
+    left: 0;
+}
+.navbar .menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:-150%;
+    top: 0;
+    background-color: rgba(254, 232, 165, 0.618);
+    text-align: center;
+    padding-top: 80px;
+    transition: all .3s ease;
+}
+.navbar .menu li{
+    display: block;
+}
+.navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.home .home-content .text-1{
+    font-size: 55px;
+}
+.services1 .services-content .card{
+    width: calc(50% - 20px);
+    background: transparent;
+    text-align: center;
+    padding: 25px 20px;
+}
+.about-me-foto{
+    display: none;
+}
+.services .services-content .card{
+    width: calc(70% - 10px);
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.skills .skill-content .column,
+.contact .content-contact .columnd{
+    width: calc(100% - 30px);
+    margin-bottom: 35px;
+}
+.contact .content-contact .card{
+    width: calc(40% - 10px);
+    margin-bottom: 40px;
+}
+}
+
+@media (max-width:790px ){
+.blackish .max-width .text{
+    font-size: 45px;
+}
+.services .services-content .card{
+    width: calc(100% - 50px);
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.services1 .services-content .card{
+    width: calc(70% - 20px);
+    background: transparent;
+    text-align: center;
+    padding: 25px 20px;
+}
+.logosOfBrands .max-width .logoImg{
+    width: calc(45% - 10px);
+    margin-bottom: 50px;
+}
+.project .max-width{
+    display:block;
+    text-align: center;
+    margin-left: 25%;
+}
+.project .card{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 128px;
+    text-align: center;
+    letter-spacing: 1.7px;
+    color: #CDA274;
+    width: calc(60% - 10px);
+}
+#card1{
+    border-bottom: 3px solid #CDA274;
+    padding-bottom: 20px;
+    border-right: none;
+}
+#card2{
+    border-bottom: 3px solid #CDA274;
+    padding-bottom: 20px;
+    border-right: none;
+}
+#card3{
+    border-bottom: 3px solid #CDA274;
+    padding-bottom: 20px;
+    border-right: none;
+}
+.contact .content-contact .card{
+    width: calc(70% - 0px);
+    margin-bottom: 40px;
+}
+.contact .content-contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+}
+@media (max-width:500px ){
+    
+    .home .home-content .text-1{
+        font-size: 50px;
+    }
+    
+.home .home-content a{
+    font-size: 15px;
+    padding: 8px 20px;
+}
+.services .services-content .card{
+    width: calc(70% - 50px);
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.logosOfBrands .max-width .logoImg{
+    width: calc(40% - 10px);
+    margin-bottom: 50px;
+}
+}

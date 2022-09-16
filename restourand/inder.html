@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <!--bootstrap links started-->
+    <link rel="stylesheet" href="../animate.css">
+</head>
+<body>
+	<!--navbar-->
+	<nav>
+		<div class="navbar">
+			<div class="nav-brand">
+				<img src="./img/LOGO (6).png" alt="">
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#">ГЛАВНАЯ</a></li>
+					<li><a href="#">МЕНЮ</a></li>
+					<li><a href="#">О НАС</a></li>
+					<li><a href="#">БРОНЬ</a></li>
+				</ul>
+				<div class="shop">
+					<div class="cart"><img src="./img/cart.png" alt="" srcset=""></div>
+					<div class="cart-desc">
+						<div class="shnum">
+							<img src="./img/phone.png" alt="">
+							<span class="phone"><a href="#">+998(99)416-86-82</a></span>
+							<p class="shdesc">Свяжитесь с нами для<br>бронирования</p>
+						</div>
+					</div>
+				</div>
+				<div class="nav-btn"> <a href="#">ЗАКАЗ СТОЛИКА</a></div>
+				<div class="menu-btn"><img src="./img/Group.png" alt=""></div>
+			</div>
+			<div class="menu-btn">
+				<div id="burger" class="btn"><button onclick="Myfunction()"><img src="./img/Group.png" alt=""></button></div>
+				<div id="menu" class="menu-slide ">
+				<ul>
+					<li><a href="#">ГЛАВНАЯ</a></li>
+					<li><a href="#">МЕНЮ</a></li>
+					<li><a href="#">О НАС</a></li>
+					<li><a href="#">БРОНЬ</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--main-->
+	<div class="main">
+
+	</div>
+</body>
+
+
+<script src="wow.min.js">
+    $(`.menu-btn`).click(function(){
+        $(`.menu-slide ul`).toggleClass(`active`);
+        $(`.menu-btn img`).toggleClass(`active`);
+    });
+</script>
+<script src="./main.js"></script>
+
+
+
+</html>
